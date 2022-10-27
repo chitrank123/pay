@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script>
+      function m(){
+    const t1 = document.getElementsByName("MerchantID").values;
+    const t2 = document.getElementsByName("TransactionNo").values;
+    const t3 = document.getElementsByName("TransctionRefNo.").values;
+    const t4 = document.getElementsByName("BankReferenceNo").values;
+    const t5 = document.getElementsByName("TxnAmount").values;
+    const t6 = document.getElementsByName("BankCode").values;
+    const t7 = document.getElementsByName("IsSIOpted").values;
+    const t8 = document.getElementsByName("PaymentMode").values;
+    const t9 = document.getElementsByName("PG_Remarks").values;
+    const t10 = document.getElementsByName("PaymentStatus").values;
+    const t11 = document.getElementsByName("TransactionDate").values;
+    const t12 = document.getElementsByName("AppID").values;
+    const t13 = document.getElementsByName("Checksum").values;
+}
+   </script>
+
 </head>
 <body>
-    <form method="get" target="_self">
-        <h1>PAYMENT</h1>
-        <input name="btn" value="submit" type="submit">
-    </form>    
+   <form method="get">
+      <p>Click the following button to see the function in action</p>  
+      <input type = "button" onclick = "m()" value = "Display">  
+   </form>
 </body>
 </html>
