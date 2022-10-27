@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script>
+      let url = "http://202.191.196.210/UAT/CCPGISUBSCRIBER/SubscriberResponse.aspx";
+      let paramaters = (new URL(url)).searchParams;
+      var MerchantID = paramaters.get("MerchantID");
+      var TransactionNo = paramaters.get("TransactionNo");
+      var TransctionRefNo = paramaters.get("TransctionRefNo");
+      var BankReferenceNo = paramaters.get("BankReferenceNo");
+      var TxnAmount = paramaters.get("TxnAmount");
+      var BankCode = paramaters.get("BankCode");
+      var IsSIOpted = paramaters.get("IsSIOpted");
+      var PaymentMode = paramaters.get("PaymentMode");
+      var PG_Remarks = paramaters.get("PG_Remarks");
+      var PaymentStatus = paramaters.get("PaymentStatus");
+      var TransactionDate = paramaters.get("TransactionDate");
+      var AppID = paramaters.get("AppID");
+      var Checksum = paramaters.get("Checksum");
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
