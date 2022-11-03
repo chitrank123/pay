@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var request = new XMLHttpRequest()
+
+// Open a new connection, using the GET request on the URL endpoint
+request.open('GET', `http://202.191.196.210/UAT/CCPGISUBSCRIBER/SubscriberResponse/hdnmsg.aspx`, true)
+
+request.onload = function () {
+  // Begin accessing JSON data here
+  var data = JSON.parse(this.response)
+  console.log(data) 
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
